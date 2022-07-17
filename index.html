@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <title> Afrika</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- container -->
+      <div class="container">
+        <!-- nav bar -->
+        <nav class="nav-bar">
+          <!-- logo -->
+          <div class="logo">
+            <a href="#"> Charity</a>
+          </div>
+          <!-- nav menu -->
+          <nav class="nav__menu" id="myNav">
+            <!-- close button -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <ul class="nav__menu-items">
+              <li class="nav__menu-item"><a class="nav__menu-link  nav__menu-link__aktiv "
+                  href="#">About us</a></li>
+              <li class="nav__menu-item"><a class="nav__menu-link" href="#">Sourse</a></li>
+              <li class="nav__menu-item"><a class="nav__menu-link" href="#">Our programs</a></li>
+              <li class="nav__menu-item"><a class="nav__menu-link" href="#">Current projects</a>
+              </li>
+              <li class="nav__menu-item"><a class="nav__menu-link" href="#">Statistics</a></li>
+              <li class="nav__menu-item"><a class="nav__menu-link" href="#">News</a></li>
+            </ul>
+
+
+
+          </nav>
+
+          <!-- mobaile button -->
+          <span class="open-slide">
+            <a href="#" onclick="openNav()">
+              <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#3333" stroke-width="5" />
+                <path d="M0,14 30,14" stroke="#3333" stroke-width="5" />
+                <path d="M0,23 30,23" stroke="#3333" stroke-width="5" />
+              </svg>
+            </a>
+          </span>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- Section Home -->
+    <section class="home home-bg">
+      <div class="container">
+        <div class="home-items">
+          <!-- Text -->
+          <div class="home-item__text">
+            <!-- h2 -->
+            <h2 class="home-item__text__h2">Helping Africa With <span
+                class="title__color">Money</span> <br>
+              <span class="title__color">Saving</span> Hundreds
+              Of Lives
+            </h2>
+
+            <!-- text -->
+            <div class="home-item__text__p">
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque
+                recusandae,
+                debitis exercitationem magni vero nesciunt amet magnam. Necessitatibus dolores quos
+                ipsam consequuntur consectetur in totam molestias temporibus, eveniet, velit saepe
+              </p>
+            </div>
+
+            <!-- btn -->
+            <div>
+              <a href="#" class="btn btn--dark-green btn--color">Join now <span
+                  class="btn--dark-green__icon">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                    viewBox="0 0 24 24" width="14" height="24">
+                    <path
+                      d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z" />
+                  </svg>
+                </span></a>
+            </div>
+
+            <!-- everything done -->
+            <div class="everything-done-items">
+              <div class="everything-done-wrapper">
+                <div class="everything-done-item">
+                  <p class="everything-done-item__p-1">10.000</p>
+                  <p class="everything-done-item__p-2">Participants</p>
+                </div>
+                <!-- line -->
+                <div class="everything-done-item__line"></div>
+                <div class="everything-done-item">
+                  <p class="everything-done-item__p-1">$135m</p>
+                  <p class="everything-done-item__p-2">Size of the fund</p>
+                </div>
+                <!-- line -->
+                <div class="everything-done-item__line"></div>
+                <div class="everything-done-item">
+                  <p class="everything-done-item__p-1">193</p>
+                  <p class="everything-done-item__p-2">Total Project</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- video -->
+          <div class="home-item__video">
+
+            <div class="video-wrapper">
+              <!-- Вставить видео  -->
+              <!-- button - play -->
+              <a id="play-video" class="video-play-button" href="#">
+                <span></span>
+              </a>
+
+              <div id="video-overlay" class="video-overlay">
+                <a class="video-overlay-close">&times;</a>
+              </div>
+
+              <img src="img/Slice.png" alt="#">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section  About  -->
+    <section class="about  about-bg">
+      <div class="container">
+        <div class="about-items">
+          <!-- title block -->
+          <div class="about-item__title-block">
+            <h3 class="about-item__title-block__h3"> About The <span class="title__color"> Company
+              </span>And <br> The Founder</h3>
+          </div>
+
+          <!-- block  wrapper  -->
+          <div class="about-block__wrapper">
+
+            <!-- video block -->
+            <div class="about-item__video-block">
+              <div class="video-wrapper">
+                <!-- Вставить видео  -->
+                <!-- button - play -->
+                <a id="play-video" class="video-play-button" href="#">
+                  <span></span>
+                </a>
+
+                <div id="video-overlay" class="video-overlay">
+                  <a class="video-overlay-close">&times;</a>
+                </div>
+
+                <img src="img/Slice-2.png" alt="#">
+
+              </div>
+            </div>
+
+            <!-- text block -->
+            <div class="about-item__text-block">
+              <!-- text 1 -->
+              <p class="about-item__text-block__p">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nihil unde minus quae aspernatur alias, eligendi quasi laborum
+                ipsum
+                accusamus adipisci? Quo placeat vel ut perferendis sit, reiciendis necessitatibus
+                maiores ea adipisci obcaecati officia ipsum aut iusto quisquam atque facilis sed!
+              </p>
+
+              <p class="about-item__text-block__p">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nihil unde minus quae aspernatur alias, eligendi quasi laborum
+                ipsum
+              </p>
+
+              <!-- text 2 -->
+              <div class="about-item__text-block__items">
+                <p class="about-item__text-block__item">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Sint accusantium ducimus magni totam quasi qui?</p>
+
+                <p class="about-item__text-block__item">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Sint accusantium ducimus magni totam quasi qui?</p>
+
+                <p class="about-item__text-block__item">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Sint accusantium ducimus magni totam quasi qui?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Sourcse -->
+    <section class="sourcse" style="display:none;">
+      <div class="container">
+        <div class="sourcse-items">
+          <!-- title in text -->
+          <div class="sourcse-item__text">
+            <!-- title -->
+            <h3 class="sourcse-item__text__h3"><span class="title__color">Sources</span> Of
+              Fundraising</h3>
+            <!-- text -->
+            <p class="sourcse-item__text__p">Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Incidunt illum inventore totam! Incidunt velit, magni voluptate debitis quasi
+              maxime impedit necessitatibus! Doloremque, vel dolor. Dicta magni quae dolorum ab.
+              Nulla unde ullam aliquam tenetur facilis itaque adipisci architecto labore quas!</p>
+          </div>
+        </div>
+
+        <!-- wrapper -->
+        <div class="sourcse__wrapper">
+
+          <div class="sourcse-accordion">
+            <div class="sourcse-accordion__wrapper">
+
+              <div class="accordion" id="accordion-1">
+                <!-- 1 -->
+                <div class="accordion__item ">
+                  <div class="accordion__header icon-1">
+                    Source 1 Title
+                  </div>
+                  <div class="accordion__body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deleniti quae,
+                      dolores veritatis perspiciatis officia blanditiis officiis doloremque
+                      reprehenderit voluptates!
+                    </p>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="accordion__item">
+                  <div class="accordion__header icon-2">
+                    Source 2 Title
+                  </div>
+                  <div class="accordion__body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deleniti quae,
+                      dolores veritatis
+                      perspiciatis officia blanditiis officiis doloremque reprehenderit voluptates!
+                    </p>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="accordion__item">
+                  <div class="accordion__header icon-3">
+                    Source 3 Title
+                  </div>
+                  <div class="accordion__body ">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deleniti quae,
+                      dolores veritatis
+                      perspiciatis officia blanditiis officiis doloremque reprehenderit voluptates!
+                    </p>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="accordion__item">
+                  <div class="accordion__header icon-4">
+                    Source 4 Title
+                  </div>
+                  <div class="accordion__body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deleniti quae,
+                      dolores veritatis
+                      perspiciatis officia blanditiis officiis doloremque reprehenderit voluptates!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/accordion.js"></script>
+
+
+      </div>
+    </section>
+
+
+    <!-- Section  programs -->
+    <section class="programs bg-programs">
+      <div class="container">
+        <div class="programs__wrapper">
+
+          <!-- title -  text -->
+          <div class="programs-text">
+            <h3 class="programs-text__h3">Programs For <span class="title__color">Investors</span>
+            </h3>
+            <p class="programs-text__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Sint, minima voluptas suscipit quibusdam eius, placeat neque modi vel cupiditate id
+              magnam optio voluptatum recusandae necessitatibus quaerat exercitationem vitae itaque
+              ea.</p>
+          </div>
+
+          <!-- video block  -->
+          <div class="programs-video">
+            <div class="programs-video__wrapper">
+              <div class="video-wrapper">
+                <!-- Вставить видео  -->
+                <!-- button - play -->
+                <a id="play-video" class="video-play-button" href="#">
+                  <span></span>
+                </a>
+
+                <div id="video-overlay" class="video-overlay">
+                  <a class="video-overlay-close">&times;</a>
+                </div>
+
+                <!-- заставка img -->
+                <img class="img-video-3" src="img/video-img-3.jpg" alt="#">
+
+
+              </div>
+
+            </div>
+          </div>
+
+          <!--programs  tabs  -->
+          <div class="programs-tabs">
+            <!-- nav tabs -->
+            <div class="nav-tabs">
+              <!-- container -->
+              <div class="nav-tabs__container">
+                <!-- tab -->
+                <div class="tab">
+                  <button class="tablinks " onclick="openProgram(event, 'Program1')"
+                    id="defaultOpen">Program 1 Title</button>
+                  <button class="tablinks " onclick="openProgram(event, 'Program2')">Program
+                    2
+                    Title</button>
+                  <button class="tablinks " onclick="openProgram(event, 'Program3')">Program
+                    3
+                    Title</button>
+                  <button class="tablinks " onclick="openProgram(event, 'Program4')">Program
+                    4
+                    Title</button>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- tabcontent -->
+            <div class="tabcontent-wrapper">
+
+              <div id="Program1" class="tabcontent">
+                <!-- content -->
+                <div class="block">
+
+                  <div class="block__wrapper__img">
+                    <img class="block__img" src="img/wumen.webp" alt="#">
+                  </div>
+
+                  <div class="block__items">
+                    <div>
+                      <h3 class="block__item__h3">Program 1 Title</h3>
+                    </div>
+
+                    <div>
+                      <p class="block__item__p-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Mollitia debitis natus doloribus omnis pariatur. Reprehenderit, numquam quis
+                        perferendis debitis, officia, </p>
+                      <p class="block__item__p-2 block__item__p__icon-2">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        recusandae fugiat a! Animi, vero.</p>
+                      <p class="block__item__p-2 block__item__p__icon-2">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        fugiat a! Animi, vero.</p>
+                    </div>
+                    <!-- from -->
+                    <div class="block__item__from"> is Available :<span
+                        class="block__item__from__span">
+                        From
+                        $450.000</span></div>
+                    <!-- btn -->
+                    <div>
+                      <a href="#" class="btn btn--dark-green btn--color">Join the program <span
+                          class="btn--dark-green__icon">
+                          <?xml version="1.0" encoding="UTF-8"?>
+                          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                            viewBox="0 0 24 24" width="14" height="24">
+                            <path
+                              d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z" />
+                          </svg>
+                        </span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="Program2" class="tabcontent">
+                <!-- content -->
+                <div class="block">
+
+                  <div class="block__wrapper__img">
+                    <img class="block__img" src="img/block-img.jpg" alt="#">
+                  </div>
+
+                  <div class="block__items">
+                    <div>
+                      <h3 class="block__item__h3">Program 2 Title</h3>
+                    </div>
+
+                    <div>
+                      <p class="block__item__p-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Mollitia debitis natus doloribus omnis pariatur. Reprehenderit, numquam quis
+                        perferendis debitis, officia, </p>
+                      <p class="block__item__p-2 block__item__p__icon-2">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        recusandae fugiat a! Animi, vero.</p>
+                      <p class="block__item__p-2 block__item__p__icon-2">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        fugiat a! Animi, vero.</p>
+                    </div>
+                    <!-- from -->
+                    <div class="block__item__from"> is Available :<span
+                        class="block__item__from__span">
+                        From
+                        $450.000</span></div>
+                    <!-- btn -->
+                    <div>
+                      <a href="#" class="btn btn--dark-green btn--color">Join the program <span
+                          class="btn--dark-green__icon">
+                          <?xml version="1.0" encoding="UTF-8"?>
+                          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                            viewBox="0 0 24 24" width="14" height="24">
+                            <path
+                              d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z" />
+                          </svg>
+                        </span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="Program3" class="tabcontent">
+                <!-- content -->
+                <div class="block">
+
+                  <div class="block__wrapper__img">
+                    <img class="block__img" src="img/block-img.jpg" alt="#">
+                  </div>
+
+                  <div class="block__items">
+                    <div>
+                      <h3 class="block__item__h3">Program 3 Title</h3>
+                    </div>
+
+                    <div>
+                      <p class="block__item__p-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Mollitia debitis natus doloribus omnis pariatur. Reprehenderit, numquam quis
+                        perferendis debitis, officia, </p>
+                      <p class="block__item__p-2 block__item__p__icon-2">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        recusandae fugiat a! Animi, vero.</p>
+                      <p class="block__item__p-2 block__item__p__icon-2">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        fugiat a! Animi, vero.</p>
+                    </div>
+                    <!-- from -->
+                    <div class="block__item__from"> is Available :<span
+                        class="block__item__from__span">
+                        From
+                        $450.000</span></div>
+                    <!-- btn -->
+                    <div>
+                      <a href="#" class="btn btn--dark-green btn--color">Join the program <span
+                          class="btn--dark-green__icon">
+                          <?xml version="1.0" encoding="UTF-8"?>
+                          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                            viewBox="0 0 24 24" width="14" height="24">
+                            <path
+                              d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z" />
+                          </svg>
+                        </span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="Program4" class="tabcontent">
+                <!-- content -->
+                <div class="block">
+
+                  <div class="block__wrapper__img">
+                    <img class="block__img" src="img/block-img.jpg" alt="#">
+                  </div>
+
+                  <div class="block__items">
+                    <div>
+                      <h3 class="block__item__h3">Program 4 Title</h3>
+                    </div>
+
+                    <div>
+                      <p class="block__item__p-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Mollitia debitis natus doloribus omnis pariatur. Reprehenderit, numquam quis
+                        perferendis debitis, officia, </p>
+                      <p class="block__item__p-2 block__item__p__icon-2">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        recusandae fugiat a! Animi, vero.</p>
+                      <p class="block__item__p-2 block__item__p__icon-2">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        fugiat a! Animi, vero.</p>
+                    </div>
+                    <!-- from -->
+                    <div class="block__item__from"> is Available :<span
+                        class="block__item__from__span">
+                        From
+                        $450.000</span></div>
+                    <!-- btn -->
+                    <div>
+                      <a href="#" class="btn btn--dark-green btn--color">Join the program <span
+                          class="btn--dark-green__icon">
+                          <?xml version="1.0" encoding="UTF-8"?>
+                          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                            viewBox="0 0 24 24" width="14" height="24">
+                            <path
+                              d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z" />
+                          </svg>
+                        </span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- js 1 -->
+            <!-- <script>
+              function openProgram(evt, programName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(programName).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+              // Get the element with id="defaultOpen" and click on it
+              document.getElementById("defaultOpen").click();
+            </script> -->
+
+            <!-- js 2 -->
+            <script>
+              function openProgram(evt, programName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace("active", "");
+                }
+                document.getElementById(programName).style.display = "block";
+                evt.currentTarget.className += "active";
+              }
+
+              // Get the element with id="defaultOpen" and click on it
+              document.getElementById("defaultOpen").click();
+            </script>
+          </div>
+        </div>
+
+
+
+        <!-- programs  -->
+        <div class="block." style="display:none ;">
+
+          <div class="block__wrapper__img">
+            <img class="block__img" src="img/block-img.jpg" alt="#">
+          </div>
+
+          <div class="block__items">
+            <div>
+              <h3 class="block__item__h3">Program 1 Title</h3>
+            </div>
+
+            <div>
+              <p class="block__item__p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia debitis natus doloribus omnis pariatur. Reprehenderit, numquam quis
+                perferendis debitis, officia, </p>
+              <p class="block__item__p-2 block__item__p__icon-2">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                recusandae fugiat a! Animi, vero.</p>
+              <p class="block__item__p-2 block__item__p__icon-2">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                fugiat a! Animi, vero.</p>
+            </div>
+            <!-- from -->
+            <div class="block__item__from"> is Available :<span class="block__item__from__span">
+                From
+                $450.000</span></div>
+            <!-- btn -->
+            <div>
+              <a href="#" class="btn btn--dark-green btn--color">Join the program <span
+                  class="btn--dark-green__icon">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                    viewBox="0 0 24 24" width="14" height="24">
+                    <path
+                      d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z" />
+                  </svg>
+                </span></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!--js -->
+    <script src="js/main.js"></script>
+
+
+  </body>
+
+</html>
